@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>在MarkDown中使用Katex | sinzol-ctf</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://sinzol.github.io/favicon.ico?v=1734177846537">
+<link rel="stylesheet" href="https://sinzol.github.io/styles/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="在 Markdown 中使用 KaTeX
+如果你的 Markdown 编辑器或博客平台支持 KaTeX，你可以直接在 Markdown 中书写 LaTeX 语法，KaTeX 会自动渲染公式。
+行内公式
+要在行内插入公式，可以使用单个美元符号..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://sinzol.github.io">
+        <img src="https://sinzol.github.io/images/avatar.png?v=1734177846537" class="site-logo">
+        <h1 class="site-title">sinzol-ctf</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Be friends with the knowledge!
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://sinzol.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">在MarkDown中使用Katex</h2>
+            <div class="post-date">2024-12-14</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="在-markdown-中使用-katex">在 Markdown 中使用 KaTeX</h3>
+<p>如果你的 Markdown 编辑器或博客平台支持 KaTeX，你可以直接在 Markdown 中书写 LaTeX 语法，KaTeX 会自动渲染公式。</p>
+<h4 id="行内公式">行内公式</h4>
+<p>要在行内插入公式，可以使用单个美元符号 <code>$</code> 将公式包围起来。例如：</p>
+<pre><code class="language-markdown">这是一个行内公式：$E = mc^2$
+</code></pre>
+<p>输出：<br>
+这是一个行内公式：( E = mc^2 )</p>
+<h4 id="块级公式">块级公式</h4>
+<p>要插入块级公式，可以使用双美元符号 <code>$$</code> 将公式包围起来。例如：</p>
+<pre><code class="language-markdown">$$
+E = mc^2
+$$
+</code></pre>
+<p>输出：</p>
+<p>[<br>
+E = mc^2<br>
+]</p>
+<h3 id="4-常见的-latex-数学语法">4. 常见的 LaTeX 数学语法</h3>
+<p>KaTeX 支持绝大多数的 LaTeX 数学命令，以下是一些常见的数学公式示例。</p>
+<h4 id="分式公式">分式公式</h4>
+<pre><code class="language-markdown">这是一个分式公式：$\frac{a}{b}$
+</code></pre>
+<p>输出：<br>
+[<br>
+\frac{a}{b}<br>
+]</p>
+<h4 id="根号公式">根号公式</h4>
+<pre><code class="language-markdown">这是一个根号公式：$\sqrt{a^2 + b^2}$
+</code></pre>
+<p>输出：<br>
+[<br>
+\sqrt{a^2 + b^2}<br>
+]</p>
+<h4 id="求和公式">求和公式</h4>
+<pre><code class="language-markdown">这是一个求和公式：$\sum_{i=1}^{n} a_i$
+</code></pre>
+<p>输出：<br>
+[<br>
+\sum_{i=1}^{n} a_i<br>
+]</p>
+<h4 id="极限公式">极限公式</h4>
+<pre><code class="language-markdown">这是一个极限公式：$\lim_{x \to \infty} f(x)$
+</code></pre>
+<p>输出：<br>
+[<br>
+\lim_{x \to \infty} f(x)<br>
+]</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://sinzol.github.io/post/markdown/">
+                  <h3 class="post-title">
+                    Markdown
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

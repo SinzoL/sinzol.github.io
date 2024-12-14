@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown | sinzol-ctf</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://sinzol.github.io/favicon.ico?v=1734177846537">
+<link rel="stylesheet" href="https://sinzol.github.io/styles/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="以下是完整的博客内容，已经使用 Markdown 格式化，你可以直接复制使用：
+# Markdown 完整指南：从高频使用到低频使用
+
+Markdown 是一种轻量级标记语言，它允许你用纯文本格式化文档，方便地进行网页内容创建、博客写作、文..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://sinzol.github.io">
+        <img src="https://sinzol.github.io/images/avatar.png?v=1734177846537" class="site-logo">
+        <h1 class="site-title">sinzol-ctf</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Be friends with the knowledge!
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://sinzol.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown</h2>
+            <div class="post-date">2024-12-14</div>
+            
+            <div class="post-content" v-pre>
+              <p>以下是完整的博客内容，已经使用 Markdown 格式化，你可以直接复制使用：</p>
+<pre><code class="language-markdown"># Markdown 完整指南：从高频使用到低频使用
+
+Markdown 是一种轻量级标记语言，它允许你用纯文本格式化文档，方便地进行网页内容创建、博客写作、文档生成等。今天，我们将按使用频次从高到低，介绍 Markdown 的常用语法和示例，帮助你更高效地使用它。
+
+## 1. 标题
+
+### 用法：
+Markdown 提供了六级标题，使用 `#` 符号来定义标题的等级，`#` 的数量决定标题的层级。
+
+### 示例：
+```markdown
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<h3 id="输出">输出：</h3>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<h2 id="2-强调加粗和斜体">2. 强调（加粗和斜体）</h2>
+<h3 id="用法">用法：</h3>
+<ul>
+<li><strong>加粗</strong>：使用两个星号 <code>**</code> 或两个下划线 <code>__</code> 包围文本。</li>
+<li><em>斜体</em>：使用一个星号 <code>*</code> 或一个下划线 <code>_</code> 包围文本。</li>
+</ul>
+<h3 id="示例">示例：</h3>
+<pre><code class="language-markdown">**这是加粗文本**
+__这也是加粗文本__
+
+*这是斜体文本*
+_这也是斜体文本_
+</code></pre>
+<h3 id="输出-2">输出：</h3>
+<p><strong>这是加粗文本</strong><br>
+<strong>这也是加粗文本</strong></p>
+<p><em>这是斜体文本</em><br>
+<em>这也是斜体文本</em></p>
+<h2 id="3-列表">3. 列表</h2>
+<h3 id="用法-2">用法：</h3>
+<p>Markdown 支持有序列表和无序列表：</p>
+<ul>
+<li><strong>无序列表</strong>：使用 <code>-</code>、<code>+</code> 或 <code>*</code>。</li>
+<li><strong>有序列表</strong>：使用数字加点（如 <code>1.</code>、<code>2.</code> 等）。</li>
+</ul>
+<h3 id="示例-2">示例：</h3>
+<pre><code class="language-markdown">- 苹果
+- 香蕉
+- 橙子
+
+1. 第一步
+2. 第二步
+3. 第三步
+</code></pre>
+<h3 id="输出-3">输出：</h3>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橙子</li>
+</ul>
+<ol>
+<li>第一步</li>
+<li>第二步</li>
+<li>第三步</li>
+</ol>
+<h2 id="4-链接">4. 链接</h2>
+<h3 id="用法-3">用法：</h3>
+<p>Markdown 允许你插入链接，有两种方式：</p>
+<ul>
+<li><strong>行内链接</strong>：<code>[链接文本](链接地址)</code></li>
+<li><strong>引用式链接</strong>：<code>[链接文本][id]</code> 和在文档的其他地方定义该链接 <code>id</code>。</li>
+</ul>
+<h3 id="示例-3">示例：</h3>
+<pre><code class="language-markdown">[Google](https://www.google.com)
+
+[GitHub]: https://github.com
+访问 [GitHub](https://github.com) 获取更多信息。
+</code></pre>
+<h3 id="输出-4">输出：</h3>
+<p><a href="https://www.google.com">Google</a><br>
+[GitHub]: https://github.com<br>
+访问 <a href="https://github.com">GitHub</a> 获取更多信息。</p>
+<h2 id="5-图片">5. 图片</h2>
+<h3 id="用法-4">用法：</h3>
+<p>插入图片的语法与链接类似，只不过需要在前面加一个 <code>!</code> 符号。</p>
+<h3 id="示例-4">示例：</h3>
+<pre><code class="language-markdown">![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+</code></pre>
+<h3 id="输出-5">输出：</h3>
+<figure data-type="image" tabindex="1"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" loading="lazy"></figure>
+<h2 id="6-代码">6. 代码</h2>
+<h3 id="用法-5">用法：</h3>
+<ul>
+<li><strong>行内代码</strong>：使用反引号 <code>`</code> 包围代码。</li>
+<li><strong>代码块</strong>：使用三个反引号 ``` 来包围多行代码。</li>
+</ul>
+<h3 id="示例-5">示例：</h3>
+<pre><code class="language-markdown">这是 `行内代码` 示例。
+
+```python
+def hello_world():
+    print(&quot;Hello, World!&quot;)
+</code></pre>
+<pre><code>
+### 输出：
+这是 `行内代码` 示例。
+
+```python
+def hello_world():
+    print(&quot;Hello, World!&quot;)
+</code></pre>
+<h2 id="7-引用">7. 引用</h2>
+<h3 id="用法-6">用法：</h3>
+<p>引用文本使用 <code>&gt;</code> 符号。</p>
+<h3 id="示例-6">示例：</h3>
+<pre><code class="language-markdown">&gt; 这是一个引用示例。
+&gt; 
+&gt; Markdown 允许你轻松创建引用块。
+</code></pre>
+<h3 id="输出-6">输出：</h3>
+<blockquote>
+<p>这是一个引用示例。</p>
+<p>Markdown 允许你轻松创建引用块。</p>
+</blockquote>
+<h2 id="8-水平线">8. 水平线</h2>
+<h3 id="用法-7">用法：</h3>
+<p>使用三个或更多的 <code>-</code>、<code>*</code> 或 <code>_</code> 创建水平线。</p>
+<h3 id="示例-7">示例：</h3>
+<pre><code class="language-markdown">---
+或
+***
+或
+___
+</code></pre>
+<h3 id="输出-7">输出：</h3>
+<hr>
+<p>或</p>
+<hr>
+<p>或</p>
+<hr>
+<h2 id="9-表格">9. 表格</h2>
+<h3 id="用法-8">用法：</h3>
+<p>使用管道符 <code>|</code> 来创建表格，并用破折号 <code>-</code> 来分隔表头和表格内容。</p>
+<h3 id="示例-8">示例：</h3>
+<pre><code class="language-markdown">| 姓名  | 年龄 | 性别 |
+| ----- | ---- | ---- |
+| 小明  | 25   | 男   |
+| 小红  | 22   | 女   |
+| 小亮  | 24   | 男   |
+</code></pre>
+<h3 id="输出-8">输出：</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>年龄</th>
+<th>性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小明</td>
+<td>25</td>
+<td>男</td>
+</tr>
+<tr>
+<td>小红</td>
+<td>22</td>
+<td>女</td>
+</tr>
+<tr>
+<td>小亮</td>
+<td>24</td>
+<td>男</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-任务列表">10. 任务列表</h2>
+<h3 id="用法-9">用法：</h3>
+<p>Markdown 支持任务列表，使用 <code>- [ ]</code> 来表示未完成任务，<code>- [x]</code> 来表示已完成任务。</p>
+<h3 id="示例-9">示例：</h3>
+<pre><code class="language-markdown">- [x] 完成博客写作
+- [ ] 进行代码审查
+- [ ] 部署网站
+</code></pre>
+<h3 id="输出-9">输出：</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3232992"><label class="task-list-item-label" for="task-item-3232992"> 完成博客写作</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3879241"><label class="task-list-item-label" for="task-item-3879241"> 进行代码审查</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5099624"><label class="task-list-item-label" for="task-item-5099624"> 部署网站</label></li>
+</ul>
+<h2 id="11-嵌入-html">11. 嵌入 HTML</h2>
+<h3 id="用法-10">用法：</h3>
+<p>Markdown 支持直接嵌入 HTML 标签。如果需要更复杂的布局或元素，可以使用 HTML。</p>
+<h3 id="示例-10">示例：</h3>
+<pre><code class="language-markdown">&lt;p style=&quot;color:blue;&quot;&gt;这是一个蓝色的段落&lt;/p&gt;
+</code></pre>
+<h3 id="输出-10">输出：</h3>
+<p style="color:blue;">这是一个蓝色的段落</p>
+<h2 id="12-注脚">12. 注脚</h2>
+<h3 id="用法-11">用法：</h3>
+<p>通过使用 <code>[^1]</code> 语法来创建注脚。</p>
+<h3 id="示例-11">示例：</h3>
+<pre><code class="language-markdown">这是一个带注脚的文本[^1]。
+
+[^1]: 这是注脚内容。
+</code></pre>
+<h3 id="输出-11">输出：</h3>
+<p>这是一个带注脚的文本<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
+<h2 id="结论">结论</h2>
+<p>Markdown 是一个非常强大的标记语言，适用于从简单的文本到复杂的网页内容的各种场景。通过本文的介绍，你可以掌握常用的 Markdown 语法，并将其应用于你的博客、文档或任何其他的在线内容创建中。希望你能快速掌握并开始使用 Markdown 来提升你的写作和工作效率！</p>
+<hr>
+<p>如果你有其他 Markdown 相关问题，或者想了解更多高级用法，欢迎在评论区留言！</p>
+<pre><code>
+这个 Markdown 文件包含了所有常用的语法和详细示例，复制后可以直接放入任何 Markdown 渲染器中查看效果。</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>这是注脚内容。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://sinzol.github.io/post/hello-my-blog/">
+                  <h3 class="post-title">
+                    Hello my Blog!
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
